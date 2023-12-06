@@ -1,0 +1,136 @@
+
+/* General styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    display: block;
+    font-family: Roboto;
+}
+
+a:active,
+a {
+  text-decoration: none;
+  color: #EFEFEF;
+}
+
+main {
+    background-color: #272727;
+    min-height: 100vh;
+    color: #EFEFEF;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 50px;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/* Block styles */
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.name {
+    width: 15%;
+    
+}
+
+.about {
+    width: 45%;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+}
+
+.projects {
+    /* width: 780px;
+    height: 400px; */
+    margin: auto;
+    margin-top: 40px;
+}
+
+.links-block {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 200px);
+
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
+    /* background-color: aqua; */
+    justify-content: center;
+    gap: 10px
+}
+
+.box {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* align-items: left baseline; */
+    border: 1px solid 	hsla(0, 0%, 94%, 0.5);
+    border-radius: 20px;
+    font-weight: 100;
+    font-size: 15px;
+    /* opacity: 0.5; */
+    
+}
+
+.box8 {
+    background-color: #9EC13F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.done {
+    background: url("../img/ready.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right 1em top 1em;
+
+}
+
+.not_done {
+    background: url("../img/underConstr.png");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: right 1em top 1em;
+
+}
+
+/* Fonts */
+@font-face {
+    font-weight: 100;
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Thin.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-weight: 400;
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-weight: 300;
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  }
